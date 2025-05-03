@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desafio</title>
+  <link rel="shortcut icon" href="pacote-projeto-d010/imagens/favicon.ico" type="image/x-icon" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gloria+Hallelujah&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+    @font-face {
+      font-family: 'idroid';
+      src: url('/pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #84E1AD;
+      font-family: Arial, sans-serif;
+      color: #22613E;
+    }
+
+    #main1 {
+      width: 100%;
+      background-image: linear-gradient(#39CC7A, #217245);
+      padding: 40px 20px 0 20px;
+      border-radius: 0 0 15px 15px;
+      box-shadow: 2px 2px 6px 5px rgba(0, 0, 0, 0.315);
+    }
+
+    h1#curiosidades {
+      font-family: "Anton", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: white;
+      text-align: center;
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.445);
+    }
+
+    #p1 {
+      text-align: center;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.137);
+      margin-top: 15px;
+      color: white;
+    }
+
+    nav#menu-bar {
+       /* Cor escura do menu */
+      width: 100%;
+      margin-top: 30px;
+      padding: 10px 20px;
+      border-radius: 0 0 15px 15px;
+    }
+
+    ul#menu {
+      display: flex;
+      justify-content: flex-start;
+      gap: 25px;
+      list-style: none;
+    }
+
+    ul#menu li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-family: "Work Sans", sans-serif;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      padding: 8px 12px;
+      border-radius: 5px;
+    }
+
+    ul#menu li a:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+    }
+
+    .historia {
+        margin: 20px 700px;
+        width: 600px;
+        height: 1800px;
+        background-color: white; /* Fundo branco */
+        padding: 40px 20px 0 20px;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 2px 2px 6px 5px rgba(0, 0, 0, 0.315);
+    }
+    .historia > h1{
+        font-family: 'idroid',  Arial, Helvetica, sans-serif
+    }
+    .historia > .gradient{
+      background: linear-gradient(to right, #dff3e2, white); /* ajustável */
+      padding: 10px 20px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #1a5e3e; /* Verde escuro */
+      display: inline-block;
+    }
+    .historia > img {
+        width: 550px;
+    }
+    .historia > main > h1{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: #2FA866;
+    margin-top: 10px;
+    color: white;
+    font-size: 1.5em;
+    }
+    .historia > main {
+     background-color: #C5EBD6;
+     border-radius: 10px;
+     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.137);
+     left: 200px;
+     height: 400px;
+    }
+
+    .lista-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 600px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sinal::before {
+      content: '✔';
+      color: #000;
+      margin-right: 8px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+    .c{
+      color: #279662; /* verde escuro */
+      font-weight: bold;
+    }
+    .d{
+color: white;
+    }
+    #final{
+      background-color: #1a5e3e;
+      color: #2FA866;
+      text-align: center;
+      padding: 1px;
+    }
+    p{
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <main id="main1">
+    <h1 id="curiosidades">CURIOSIDADES DE TECNOLOGIA</h1>
+    <p id="p1">
+      Tudo aquilo que você sempre quis saber sobre o mundo <br />
+      Tech, em um único lugar
+    </p>
+
+    <nav id="menu-bar">
+      <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Notícias</a></li>
+        <li><a href="#">Curiosidades</a></li>
+        <li><a href="#">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </main>
+
+  <main class="historia">
+    <h1> HISTORIA DO MASCOTE DO ANDROID </h1>
+    <p>Provavelmente você sabe que o sistema operacional <span class="c">Android</span>, mantido pelo <span class="c">Google </span>é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
+    <h1 class="gradient">
+        A PRIMEIRA VERSÃO
+    </h1>
+    <p>
+        A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado Dan Morrill. Ele conta que abriu o Inkscape (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.
+    </p>
+    <img src="pacote-projeto-d010/imagens/dan-droids.png" alt="Android">
+<p> 
+    Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os <span class="c">Dandroids</span>.
+</p>
+
+<h1 class="gradient">
+    SURGE UM NOVO MASCOTE 
+</h1>
+<p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+
+<img src="pacote-projeto-d010/imagens/bugdroid.png" alt="" style="width: 300px; margin-left: 150px;">
+<p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o Bugdroid, o novo mascote do Android.
+</p>
+
+<div style="background-color: #217245; padding: 20px; display: inline-block; border-radius: 10px;">
+    <iframe width="530" height="340" src="https://www.youtube.com/embed/l2UDgpLz20M?si=vSEpfn9rryfM2Ith" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+  </div>
+  <main>
+    <h1> Quer aprender mais?  </h1>
+
+   <p> Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
+
+   <div class="lista-container">
+    <ul>
+      <li class="sinal"><a href="#">1.5 - Cupcake</a></li>
+      <li class="sinal"><a href="#">1.6 - Donut</a></li>
+      <li class="sinal"><a href="#">2.0 - Eclair</a></li>
+      <li class="sinal"><a href="#">2.2 - Froyo</a></li>
+      <li class="sinal"><a href="#">2.3 - Gingerbread</a></li>
+      <li class="sinal"><a href="#">3.0 - Honeycomb</a></li>
+      <li class="sinal"><a href="#">4.0 - Ice Cream Sandwich</a></li>
+    </ul>
+    <ul>
+      <li class="sinal"><a href="#">4.1 - Jelly Bean</a></li>
+      <a href="#">
+     <li class="sinal"><a href="#">4.4 - KitKat</a></li>
+      </a>
+      <li class="sinal"><a href="#">5.0 - Lollipop</a></li>
+      <li class="sinal"><a href="#">6.0 - Marshmallow</a></li>
+      <li class="sinal"><a href="#">7.0 - Nougat</a></li>
+      <li class="sinal"><a href="#">8.0 - Oreo</a></li>
+      <li class="sinal"><a href="#">9.0 - Pie</a></li>
+    </ul>
+  </div>
+  </main>
+  </main>
+<p id="final">site criado por <span class="d">mim</span> para testar <span class="d">MeuAprendizado</span></p>
+</body>
+</html>
+ 
